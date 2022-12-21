@@ -1,0 +1,26 @@
+.page {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100%;
+	aspect-ratio: 1 / 1;
+	/* flex-grow: 1; */
+}
+
+.page.center {
+	align-items: center;
+}
+
+.page.center-center {
+	align-items: center;
+	justify-content: center;
+}
+
+.page.sm {
+	gap: 2rem;
+}
+
+.page.loading,
+.page.idle {
+	justify-self: stretch;
+}

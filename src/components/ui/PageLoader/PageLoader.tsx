@@ -1,4 +1,4 @@
-import './PageLoader.scss';
+import './PageLoader.css';
 
 const PageLoader: React.FC = () => {
 	return (

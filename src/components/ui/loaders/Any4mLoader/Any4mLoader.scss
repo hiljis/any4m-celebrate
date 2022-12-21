@@ -1,0 +1,39 @@
+@keyframes shadowPulse {
+	0% {
+		width: 40vw;
+		height: 40vw;
+		box-shadow: 0 0 40px 10px rgba(0, 144, 255, 0.25);
+	}
+	50% {
+		width: 45vw;
+		height: 45vw;
+		box-shadow: 0 0 1px 1px rgba(0, 144, 255, 0.25);
+	}
+	100% {
+		width: 40vw;
+		height: 40vw;
+		box-shadow: 0 0 40px 10px rgba(0, 144, 255, 0.25);
+	}
+}
+
+.any4mLoader {
+	position: relative;
+
+	&.loading::after {
+		opacity: 1;
+		animation: shadowPulse 2s ease-in-out infinite;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 40vw;
+		height: 40vw;
+		border: 1px solid rgba(0, 144, 255, 0.2);
+		border-radius: 1000px;
+		opacity: 0;
+	}
+}

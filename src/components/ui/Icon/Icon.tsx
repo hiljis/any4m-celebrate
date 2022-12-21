@@ -17,7 +17,7 @@ import { ReactComponent as IconWrite } from '../../../assets/icons/IconWrite.svg
 import { ReactComponent as IconClose } from '../../../assets/icons/IconClose.svg';
 import { ReactComponent as IconLeft } from '../../../assets/icons/IconLeft.svg';
 import { ReactComponent as IconRight } from '../../../assets/icons/IconRight.svg';
-import './Icon.scss';
+import './Icon.css';
 import { appColor } from '../../../utils/types';
 
 export type iconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';

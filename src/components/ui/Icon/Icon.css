@@ -1,0 +1,121 @@
+.icon--xs {
+	width: 3rem;
+	height: auto;
+}
+.icon--sm {
+	width: 4rem;
+	height: auto;
+}
+.icon--md {
+	width: 5rem;
+	height: auto;
+}
+.icon--lg {
+	width: 7rem;
+	height: auto;
+}
+.icon--xl {
+	width: 10rem;
+	height: auto;
+}
+.icon--xxl {
+	width: 15rem;
+	height: auto;
+}
+
+.icon--fill-white path {
+	fill: var(--c-white);
+}
+.icon--fill-light path {
+	fill: var(--c-light);
+}
+.icon--fill-dark path {
+	fill: var(--c-dark);
+}
+.icon--fill-black path {
+	fill: var(--c-black);
+}
+.icon--fill-primary path {
+	fill: var(--c-primary);
+}
+.icon--fill-secondary path {
+	fill: var(--c-secondary);
+}
+.icon--fill-pink path {
+	fill: var(--c-pink);
+}
+.icon--fill-pink-light path {
+	fill: var(--c-pink--light);
+}
+.icon--stroke-white path {
+	stroke: var(--c-white);
+}
+.icon--stroke-light path {
+	stroke: var(--c-light);
+}
+.icon--stroke-dark path {
+	stroke: var(--c-dark);
+}
+.icon--stroke-black path {
+	stroke: var(--c-dark);
+}
+.icon--stroke-primary path {
+	stroke: var(--c-primary);
+}
+.icon--stroke-secondary path {
+	stroke: var(--c-secondary);
+}
+.icon--write-dark path:first-child {
+	stroke: var(--c-dark);
+}
+.icon--write-dark path:last-child {
+	fill: var(--c-dark);
+}
+
+.icon--write-secondary path:first-child {
+	stroke: var(--c-secondary);
+}
+
+.icon--write-secondary path:last-child {
+	fill: var(--c-secondary);
+}
+
+.icon--with-container {
+	padding: 1rem;
+}
+
+.icon--with-container--square {
+	border-radius: 1rem;
+}
+.icon--with-container--circle {
+	border-radius: 1000px;
+}
+.icon--with-container--white {
+	background-color: var(--c-white);
+}
+.icon--with-container--border {
+	border: 1px solid black;
+}
+
+.iconBg--white {
+	padding: 1rem;
+	background-color: var(--c-white);
+}
+.iconBg--round {
+	padding: 1rem;
+	border-radius: 1000px;
+}
+.iconBg--square {
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.iconBgBorder--dark-1 {
+	border: 1px solid var(--c-dark);
+}
+.iconBgBorder--dark-2 {
+	border: 2px solid var(--c-dark);
+}
+.iconBgBorder--dark-3 {
+	border: 3px solid var(--c-dark);
+}
