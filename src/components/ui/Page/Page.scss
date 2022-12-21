@@ -1,0 +1,62 @@
+@import '../../../assets/styles/mixins';
+
+.page {
+	width: 100%;
+	flex-grow: 1;
+	display: flex;
+
+	&.column {
+		flex-direction: column;
+		justify-content: flex-start;
+
+		section:first-child {
+			margin-top: 12rem;
+		}
+	}
+
+	&.row {
+		padding: 0 10rem;
+		gap: 12vw;
+
+		@include respond(tab-land) {
+			gap: 10vw;
+			padding: 0 6rem;
+		}
+		@include respond(tab-port) {
+			gap: 0;
+			padding: 0 6rem;
+			// position: relative;
+			flex-direction: column;
+		}
+		@include respond(phone) {
+			// position: relative;
+			padding: 0 4rem;
+			padding-left: 7rem;
+		}
+		@include respond(slim) {
+			padding: 0 2rem;
+			padding-left: 5rem;
+		}
+	}
+
+	&.column-center-center {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&.row-center-center {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&.sm {
+		gap: 2rem;
+	}
+
+	&.loading,
+	&.idle {
+		justify-self: stretch;
+	}
+}
