@@ -1,6 +1,7 @@
 .icon--xs {
-	width: 3rem;
+	width: 2.4rem;
 	height: auto;
+	display: block;
 }
 .icon--sm {
 	width: 4rem;
@@ -27,7 +28,8 @@
 	fill: var(--c-white);
 }
 .icon--fill-light path {
-	fill: var(--c-light);
+	fill: #a9a9a9;
+	fill: #858585;
 }
 .icon--fill-dark path {
 	fill: var(--c-dark);
@@ -51,7 +53,8 @@
 	stroke: var(--c-white);
 }
 .icon--stroke-light path {
-	stroke: var(--c-light);
+	stroke: #a9a9a9;
+	stroke: #858585;
 }
 .icon--stroke-dark path {
 	stroke: var(--c-dark);

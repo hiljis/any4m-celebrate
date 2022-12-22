@@ -6,6 +6,7 @@ import MembersPage from './pages/MembersPage/MembersPage';
 import NewsPage from './pages/NewsPage/NewsPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import SignInPage from './pages/SignInPage/SignInPage';
+import UpcomingEventsPage from './pages/UpcomingEventsPage/UpcomingEventsPage';
 
 function App() {
 	const [signedIn, setSignedIn] = useState(true);
@@ -19,6 +20,7 @@ function App() {
 					{/* <Route path="/news" element={<NewsPage welcomeFinished={signedIn} />} /> */}
 					<Route path="/news" element={<NewsPage />} />
 					<Route path="/members" element={<MembersPage />} />
+					<Route path="/upcomingevents" element={<UpcomingEventsPage />} />
 					<Route path="*" element={<NotFoundPage />} />
 				</Routes>
 			</div>

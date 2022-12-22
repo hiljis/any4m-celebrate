@@ -17,6 +17,8 @@ import { ReactComponent as IconWrite } from '../../../assets/icons/IconWrite.svg
 import { ReactComponent as IconClose } from '../../../assets/icons/IconClose.svg';
 import { ReactComponent as IconLeft } from '../../../assets/icons/IconLeft.svg';
 import { ReactComponent as IconRight } from '../../../assets/icons/IconRight.svg';
+import { ReactComponent as IconTime } from '../../../assets/icons/IconTime.svg';
+import { ReactComponent as IconLocation } from '../../../assets/icons/IconLocation.svg';
 import './Icon.css';
 import { appColor } from '../../../utils/types';
 
@@ -73,6 +75,10 @@ const Icon: React.FC<Props> = ({ icon, color, size, bgColor, bgShape, bgBorder }
 			return <IconLeft className={classesStroke} />;
 		case 'right':
 			return <IconRight className={classesStroke} />;
+		case 'location':
+			return <IconLocation className={classesFill} />;
+		case 'time':
+			return <IconTime className={classesFill} />;
 		default:
 			return <></>;
 	}

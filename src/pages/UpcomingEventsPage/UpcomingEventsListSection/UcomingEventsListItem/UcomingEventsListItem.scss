@@ -1,0 +1,62 @@
+.upcomingEventListItemContent {
+	width: 100%;
+	height: min-content;
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+
+	&__img {
+		width: 7rem;
+		height: 7rem;
+		border-radius: 0.8rem;
+	}
+
+	&__grid {
+		flex-grow: 1;
+		display: grid;
+		grid-template-columns: 1fr max-content;
+		grid-template-rows: min-content min-content;
+		row-gap: 1.5rem;
+		justify-items: flex-start;
+		text-align: left;
+	}
+
+	&__title {
+		grid-column: 1 / -1;
+		grid-row: 1 / span 1;
+		font-size: 1.6rem;
+		font-weight: 500;
+		color: rgb(0, 0, 0);
+
+		overflow: hidden;
+		width: 100%;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+	}
+
+	&__location,
+	&__untilStart {
+		display: flex;
+		align-items: center;
+		gap: 0.7rem;
+
+		font-size: 1.4rem;
+		font-weight: 500;
+		line-height: 100%;
+		color: #a9a9a9;
+		color: #858585;
+	}
+
+	&__location {
+		grid-column: 1 / span 1;
+		grid-row: 2 / span 1;
+	}
+
+	&__untilStart {
+		grid-column: 2 / span 1;
+		grid-row: 2 / span 1;
+		justify-self: flex-end;
+		white-space: nowrap;
+	}
+}

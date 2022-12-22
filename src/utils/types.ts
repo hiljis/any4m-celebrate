@@ -22,6 +22,15 @@ export interface IUser {
 	avatarUrl: string;
 }
 
+export interface IUpcomingEvent {
+	start: Date;
+	stop: Date;
+	location: string;
+	text: string;
+	title: string;
+	imgUrl: string;
+}
+
 export interface IFirestoreTimestamp {
 	seconds: number;
 	nanoseconds: number;

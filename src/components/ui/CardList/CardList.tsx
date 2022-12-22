@@ -9,10 +9,10 @@ type Props = {
 
 const CardList: React.FC<Props> = ({ header, children }) => {
 	return (
-		<Fragment>
+		<div className="cardListContainer">
 			{header ? <h5 className="cardList__header">{header}</h5> : ''}
 			<ul className="cardList">{children}</ul>
-		</Fragment>
+		</div>
 	);
 };
 
