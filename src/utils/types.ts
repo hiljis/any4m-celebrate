@@ -9,6 +9,19 @@ export interface INews {
 	newsType: string;
 }
 
+export interface IUser {
+	id: number;
+	firstName: string;
+	lastName: string;
+	role: string;
+	city: string;
+	country: string;
+	info: string;
+	phone: string;
+	email: string;
+	avatarUrl: string;
+}
+
 export interface IFirestoreTimestamp {
 	seconds: number;
 	nanoseconds: number;

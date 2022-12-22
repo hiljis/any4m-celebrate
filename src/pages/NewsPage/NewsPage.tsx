@@ -9,7 +9,7 @@ import './NewsPage.scss';
 const NewsPage: React.FC = () => {
 	return (
 		<main className="newsPage">
-			<PageHeader />
+			<PageHeader>News</PageHeader>
 			<NewsCarouselSection />
 			<NewsListSection />
 		</main>

@@ -1,9 +1,13 @@
 import './PageHeader.scss';
 
-const PageHeader: React.FC = () => {
+type Props = {
+	children: string;
+};
+
+const PageHeader: React.FC<Props> = ({ children }) => {
 	return (
 		<section className="pageHeader">
-			<h1 className="pageHeader__title">News</h1>
+			<h1 className="pageHeader__title">{children}</h1>
 			<button type="button" className="burgerBtn" title="Menu">
 				<div className="burgerBtn__line"></div>
 			</button>

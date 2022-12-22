@@ -1,19 +1,19 @@
-import avatarImg from '../../assets/Images/userAvatar1.png';
+import { IUser } from '../../utils/types';
 import './UserAvatar.scss';
 
 type Props = {
-	callback: Function;
+	user: IUser;
+	size: 'sm' | 'md';
+	callback?: Function;
 };
 
-const UserAvatar: React.FC<Props> = ({ callback }) => {
+const UserAvatar: React.FC<Props> = ({ user, size, callback }) => {
+	const handleOnClick = () => {
+		if (callback) callback();
+	};
 	return (
-		<div
-			className="userAvatar"
-			onClick={() => {
-				callback();
-			}}
-		>
-			<img src={avatarImg} alt="User Avatar" className="userAvatar__img" />
+		<div className={`userAvatar ${size}`} onClick={handleOnClick}>
+			<img src={user.avatarUrl} alt="User Avatar" className={`userAvatar__img ${size}`} />
 		</div>
 	);
 };

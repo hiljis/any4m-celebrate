@@ -1,3 +1,4 @@
+import { userData } from '../../assets/data/userData';
 import Icon from '../../components/ui/Icon/Icon';
 import UserAvatar from '../../components/UserAvatar/UserAvatar';
 import './Header.scss';
@@ -9,7 +10,7 @@ const Header: React.FC = () => {
 
 	return (
 		<header className="header">
-			<UserAvatar callback={callBack} />
+			<UserAvatar user={userData[0]} size="sm" callback={callBack} />
 			<Icon icon="any4m" size="xl" />
 		</header>
 	);
