@@ -1,26 +1,28 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Header from './pages/Header/Header';
+import MembersPage from './pages/MembersPage/MembersPage';
+import NewsPage from './pages/NewsPage/NewsPage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import SignInPage from './pages/SignInPage/SignInPage';
 
 function App() {
+	const [signedIn, setSignedIn] = useState(true);
+
 	return (
 		<Fragment>
+			{/* <SignInPage /> */}
 			<div className={`App`}>
-				<SignInPage />
-				{/* <Header />
-    <Routes>
-      <Route path="/" element={<Home welcomeFinished={welcomeComplete} />} />
-      <Route path="/me" element={<Me />} />
-      <Route path="/art" element={<Art />} />
-      <Route path="/work" element={<Work />} />
-      <Route path="/education" element={<Education />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-    <Footer />
-    <BurgerMenu /> */}
+				<Header />
+				<Routes>
+					{/* <Route path="/news" element={<NewsPage welcomeFinished={signedIn} />} /> */}
+					<Route path="/news" element={<NewsPage />} />
+					<Route path="/members" element={<MembersPage />} />
+					<Route path="*" element={<NotFoundPage />} />
+				</Routes>
 			</div>
+			{/* <BurgerMenu /> */}
 			{/* <DisplayModal /> */}
 		</Fragment>
 	);

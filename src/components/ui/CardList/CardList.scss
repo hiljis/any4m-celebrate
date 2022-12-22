@@ -1,0 +1,15 @@
+.cardList {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	list-style: none;
+
+	&__header {
+		font-size: 1.6rem;
+		font-weight: 400;
+		color: black;
+		text-align: left;
+		width: 100%;
+		margin: 2rem 0;
+	}
+}

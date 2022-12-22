@@ -1,0 +1,30 @@
+.newsCarouselContainer {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	height: min-content;
+	overflow-y: scroll;
+}
+
+.newsCarouselCards {
+	position: absolute;
+	top: 0;
+	min-width: 100%;
+	width: calc(300% + 2 * 2rem);
+	height: 100%;
+
+	display: flex;
+	gap: 2rem;
+
+	transition: left 0.4s;
+
+	&--0 {
+		left: 0;
+	}
+	&--1 {
+		left: calc(-1 * (100% + 2rem));
+	}
+	&--2 {
+		left: calc(-1 * (200% + 4rem));
+	}
+}

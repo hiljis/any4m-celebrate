@@ -1,0 +1,17 @@
+.newsCarouselPositionIndicator {
+	display: flex;
+	gap: 1rem;
+
+	& .dot {
+		width: 1rem;
+		height: 1rem;
+		background-color: white;
+		border: 1px solid black;
+		border-radius: 1000px;
+		cursor: pointer;
+
+		&.active {
+			background-color: black;
+		}
+	}
+}

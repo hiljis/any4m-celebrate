@@ -1,6 +1,6 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 html {
 	font-size: 62.5%;
@@ -59,10 +59,6 @@ select:focus {
 	outline: none;
 }
 
-button {
-	background-color: transparent;
-}
-
 textarea::placeholder,
 input::placeholder {
 	/* color: #bbb; */
@@ -89,10 +85,6 @@ h3 {
 
 button {
 	border: none;
-}
-
-button:focus {
-	outline: none;
 }
 
 a {

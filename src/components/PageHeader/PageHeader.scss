@@ -1,0 +1,56 @@
+.pageHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+
+	&__title {
+		font-size: 5.2rem;
+		font-weight: 700;
+		letter-spacing: -1px;
+		color: white;
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	}
+}
+
+.burgerBtn {
+	width: 5rem;
+	height: 5rem;
+	border: 1px solid rgba(0, 144, 255, 0.2);
+	border-radius: 1000px;
+	background-color: white;
+	box-shadow: 0 5px 10px 0 rgba(0, 144, 255, 0.25);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__line {
+		position: relative;
+	}
+
+	&__line,
+	&__line::before,
+	&__line::after {
+		width: 2.4rem;
+		height: 0.3rem;
+		background-color: rgba(0, 145, 255, 0.67);
+		border-radius: 1000px;
+	}
+
+	&__line::before,
+	&__line::after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&__line::before {
+		top: -6px;
+	}
+	&__line::after {
+		top: 6px;
+	}
+}
