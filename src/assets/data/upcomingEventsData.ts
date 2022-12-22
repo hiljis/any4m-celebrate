@@ -1,6 +1,6 @@
 import sanFran from '../../assets/Images/SanFran.png';
 import teams from '../../assets/Images/Teams.png';
-import { IUpcomingEvent } from '../../utils/types';
+import { IEvent } from '../../utils/types';
 
 export interface IcomingEvent {
 	start: Date;
@@ -11,7 +11,7 @@ export interface IcomingEvent {
 	imgUrl: string;
 }
 
-export const upcomingEventsData: IUpcomingEvent[] = [
+export const upcomingEventsData: IEvent[] = [
 	{
 		start: new Date(),
 		stop: new Date(),

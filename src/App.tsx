@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import CommunityPage from './pages/CommunityPage/CommunityPage';
 import Header from './pages/Header/Header';
 import MembersPage from './pages/MembersPage/MembersPage';
 import NewsPage from './pages/NewsPage/NewsPage';
@@ -21,6 +22,7 @@ function App() {
 					<Route path="/news" element={<NewsPage />} />
 					<Route path="/members" element={<MembersPage />} />
 					<Route path="/upcomingevents" element={<UpcomingEventsPage />} />
+					<Route path="/community" element={<CommunityPage />} />
 					<Route path="*" element={<NotFoundPage />} />
 				</Routes>
 			</div>

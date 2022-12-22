@@ -8,7 +8,6 @@ import { ReactComponent as IconGithub } from '../../../assets/icons/IconGithub.s
 import { ReactComponent as IconHappy } from '../../../assets/icons/IconHappy.svg';
 import { ReactComponent as IconHappyMood } from '../../../assets/icons/IconHappyMood.svg';
 import { ReactComponent as IconHeart } from '../../../assets/icons/IconHeart.svg';
-import { ReactComponent as IconHeart2 } from '../../../assets/icons/IconHeart2.svg';
 import { ReactComponent as IconPhone } from '../../../assets/icons/IconPhone.svg';
 import { ReactComponent as IconShareSocial } from '../../../assets/icons/IconShareSocial.svg';
 import { ReactComponent as IconTerminalFilled } from '../../../assets/icons/IconTerminalFilled.svg';
@@ -19,6 +18,11 @@ import { ReactComponent as IconLeft } from '../../../assets/icons/IconLeft.svg';
 import { ReactComponent as IconRight } from '../../../assets/icons/IconRight.svg';
 import { ReactComponent as IconTime } from '../../../assets/icons/IconTime.svg';
 import { ReactComponent as IconLocation } from '../../../assets/icons/IconLocation.svg';
+import { ReactComponent as IconAdd } from '../../../assets/icons/IconAdd.svg';
+import { ReactComponent as IconClever } from '../../../assets/icons/IconClever.svg';
+import { ReactComponent as IconExhausted } from '../../../assets/icons/IconExhausted.svg';
+import { ReactComponent as IconFunny } from '../../../assets/icons/IconFunny.svg';
+import { ReactComponent as IconGreat } from '../../../assets/icons/IconGreat.svg';
 import './Icon.css';
 import { appColor } from '../../../utils/types';
 
@@ -59,8 +63,6 @@ const Icon: React.FC<Props> = ({ icon, color, size, bgColor, bgShape, bgBorder }
 			return <IconHappyMood className={classesStroke} />;
 		case 'heart':
 			return <IconHeart className={classesFill} />;
-		case 'heart-2':
-			return <IconHeart2 className={classesStroke} />;
 		case 'phone':
 			return <IconPhone className={classesStroke} />;
 		case 'shareSocial':
@@ -79,6 +81,16 @@ const Icon: React.FC<Props> = ({ icon, color, size, bgColor, bgShape, bgBorder }
 			return <IconLocation className={classesFill} />;
 		case 'time':
 			return <IconTime className={classesFill} />;
+		case 'add':
+			return <IconAdd className={classesFill} />;
+		case 'clever':
+			return <IconClever className={classesFill} />;
+		case 'exhausted':
+			return <IconExhausted className={classesFill} />;
+		case 'funny':
+			return <IconFunny className={classesFill} />;
+		case 'great':
+			return <IconGreat className={classesStroke} />;
 		default:
 			return <></>;
 	}

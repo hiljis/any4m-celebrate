@@ -28,8 +28,10 @@
 	fill: var(--c-white);
 }
 .icon--fill-light path {
-	fill: #a9a9a9;
 	fill: #858585;
+}
+.icon--fill-grey path {
+	fill: #d1d1d1;
 }
 .icon--fill-dark path {
 	fill: var(--c-dark);
@@ -38,7 +40,10 @@
 	fill: var(--c-black);
 }
 .icon--fill-primary path {
-	fill: var(--c-primary);
+	fill: rgba(0, 144, 255, 1);
+}
+.icon--fill-primary--light path {
+	fill: rgba(0, 145, 255, 0.5);
 }
 .icon--fill-secondary path {
 	fill: var(--c-secondary);
@@ -53,8 +58,10 @@
 	stroke: var(--c-white);
 }
 .icon--stroke-light path {
-	stroke: #a9a9a9;
 	stroke: #858585;
+}
+.icon--stroke-grey path {
+	stroke: #d1d1d1;
 }
 .icon--stroke-dark path {
 	stroke: var(--c-dark);
@@ -63,7 +70,10 @@
 	stroke: var(--c-dark);
 }
 .icon--stroke-primary path {
-	stroke: var(--c-primary);
+	stroke: rgba(0, 144, 255, 1);
+}
+.icon--stroke-primary--light path {
+	stroke: rgba(0, 145, 255, 0.5);
 }
 .icon--stroke-secondary path {
 	stroke: var(--c-secondary);

@@ -1,0 +1,25 @@
+.btnFullHorizontal {
+	width: 100%;
+	background-color: white;
+	padding: 0.9rem 1rem;
+	margin-bottom: 1rem;
+	border: 1px solid rgba(0, 144, 255, 0.2);
+	border-radius: 1.6rem;
+	box-shadow: 0 5px 10px 0 rgba(0, 144, 255, 0.25);
+	cursor: pointer;
+
+	transition: all 0.2s;
+
+	&:hover {
+		box-shadow: 0 6px 12px 0 rgba(0, 144, 255, 0.35);
+		transform: translateY(-1px);
+	}
+	&:active {
+		box-shadow: 0 3px 6px 0 rgba(0, 144, 255, 0.15);
+		transform: translateY(1px);
+	}
+
+	& svg {
+		margin: 0 auto;
+	}
+}

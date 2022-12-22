@@ -135,8 +135,8 @@ export const userData: IUser[] = [
 	},
 	{
 		id: 11,
-		firstName: 'Julia',
-		lastName: 'Andersson',
+		firstName: 'Alicia',
+		lastName: 'Ericsson',
 		role: 'Developer',
 		city: 'Jönköping',
 		country: 'Sweden',
