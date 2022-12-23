@@ -6,6 +6,7 @@ import Header from './pages/Header/Header';
 import MembersPage from './pages/MembersPage/MembersPage';
 import NewsPage from './pages/NewsPage/NewsPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+import PollPage from './pages/PollPage/PollPage';
 import SignInPage from './pages/SignInPage/SignInPage';
 import UpcomingEventsPage from './pages/UpcomingEventsPage/UpcomingEventsPage';
 
@@ -23,6 +24,7 @@ function App() {
 					<Route path="/members" element={<MembersPage />} />
 					<Route path="/upcomingevents" element={<UpcomingEventsPage />} />
 					<Route path="/community" element={<CommunityPage />} />
+					<Route path="/polls" element={<PollPage />} />
 					<Route path="*" element={<NotFoundPage />} />
 				</Routes>
 			</div>

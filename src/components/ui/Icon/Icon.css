@@ -24,6 +24,10 @@
 	height: auto;
 }
 
+.icon--transparent {
+	opacity: 0;
+}
+
 .icon--fill-white path {
 	fill: var(--c-white);
 }

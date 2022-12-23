@@ -23,6 +23,7 @@ import { ReactComponent as IconClever } from '../../../assets/icons/IconClever.s
 import { ReactComponent as IconExhausted } from '../../../assets/icons/IconExhausted.svg';
 import { ReactComponent as IconFunny } from '../../../assets/icons/IconFunny.svg';
 import { ReactComponent as IconGreat } from '../../../assets/icons/IconGreat.svg';
+import { ReactComponent as IconCheck } from '../../../assets/icons/IconCheck.svg';
 import './Icon.css';
 import { appColor } from '../../../utils/types';
 
@@ -91,6 +92,8 @@ const Icon: React.FC<Props> = ({ icon, color, size, bgColor, bgShape, bgBorder }
 			return <IconFunny className={classesFill} />;
 		case 'great':
 			return <IconGreat className={classesStroke} />;
+		case 'check':
+			return <IconCheck className={`icon--${size} icon--${color}`} />;
 		default:
 			return <></>;
 	}

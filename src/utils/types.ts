@@ -1,4 +1,13 @@
-export type appColor = 'white' | 'black' | 'primary' | 'primary--light' | 'secondary' | 'dark' | 'light' | 'grey';
+export type appColor =
+	| 'white'
+	| 'black'
+	| 'primary'
+	| 'primary--light'
+	| 'secondary'
+	| 'dark'
+	| 'light'
+	| 'grey'
+	| 'transparent';
 
 export interface INews {
 	id: number;
@@ -50,6 +59,16 @@ export interface IComment {
 }
 
 export type Feeling = 'clever' | 'exhausted' | 'funny' | 'happy' | 'great';
+
+export interface IPoll {
+	question: string;
+	alt1: string;
+	alt2: string;
+	alt3: string;
+	votesAlt1: number[];
+	votesAlt2: number[];
+	votesAlt3: number[];
+}
 
 export interface IFirestoreTimestamp {
 	seconds: number;

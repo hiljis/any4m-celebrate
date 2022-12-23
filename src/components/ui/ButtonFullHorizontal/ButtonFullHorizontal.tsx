@@ -5,6 +5,7 @@ type Props = {
 	onClickHandler: Function;
 };
 const ButtonFullHorizontal: React.FC<Props> = ({ children, onClickHandler }) => {
+    
 	const handleOnClick = () => {
 		onClickHandler();
 	};
